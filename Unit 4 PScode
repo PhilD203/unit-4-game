@@ -5,15 +5,15 @@
 
    * The player will be shown a random number at the start of the game.
         Random Number assigned using Math.random
-        Crystals need to be assigned random values 
+        Crystals need to be assigned random values   
         On click events for each button assinged
     
     * When the player clicks on a crystal, it will add a specific amount of points to the player's total score. 
         Adding function for clicks on crystals
         append to div with results
 
-     * Your game will hide this amount until the player clicks a crystal.
-     * When they do click one, update the player's score counter.
+     * Your game will hide crystal amount until the player clicks a crystal.
+    
 
    * The player wins if their total score matches the random number from the beginning of the game.
         Player and computer results equal display you win
