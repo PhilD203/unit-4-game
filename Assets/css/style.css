@@ -9,6 +9,7 @@ body {
 
   #directions{
     background-color: black;
+    margin: 1rem;
   }
   #welcome{
       color:white;
@@ -19,4 +20,8 @@ body {
   #footer{
       background-color: white;
       color:black;
+      padding: 1rem;
+  }
+  #button{
+      margin: 1rem
   }
