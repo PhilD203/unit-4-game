@@ -24,6 +24,8 @@ function reset(){
     for(var i = 0; i < crystals.length; i++)
         crystals[i] = 1 + Math.floor(Math.random() * 12);
     console.log(crystals);
+
+    $("#your-number").text(userNumber);
 }
 
 function crystalClick(crystalIndex){
@@ -32,16 +34,21 @@ function crystalClick(crystalIndex){
     userScore = crystals[crystalIndex] + userScore;
     crystals[crystalIndex] = 1 + Math.floor(Math.random() * 12);
     validate();
+    $("#total-title").text(userScore);
 }
+
 function validate(){
     if(userScore == userNumber){
         console.log("This is a winner");
         reset();
+     $("#win-loss").text("You Win!");
     }
     else{
         if(userScore > userNumber){
         console.log( "No" , userScore , userNumber);
+        $("#win-loss").text("You Lose");
         reset();
+
         }   
     }
 }
